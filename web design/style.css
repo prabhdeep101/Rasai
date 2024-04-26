@@ -1,5 +1,43 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+
 *{
     background-color: black;
     font-family: trebutchet MS;
     color: white;
 }
+.logo{
+    margin: 20px;
+}
+
+/* Navigation Bar */
+.header {
+    /*Aligned left incase we want a search bar*/
+   text-align: left;
+   padding: 20px 10px;
+   overflow: hidden;
+   text-decoration: none;
+   font-family: 'Franklin Gothic Medium';
+   /*Border removed becaues it wasn't in mockups*/
+ }
+ .header a {
+   display: inline-block;
+   overflow: hidden;
+   text-decoration: none;
+   font-family: 'Franklin Gothic Medium';
+   font-size: 25px;
+   margin-right: 10px;
+   padding: 10px;
+   margin: 10px;
+   border-radius: 5px;
+ }
+ .header a:hover {
+   /*hover changed to light blue*/
+   background-color: lightblue;
+   overflow: hidden;
+   text-decoration: none;
+   font-family: 'Franklin Gothic Medium';
+   color: black;
+ }
