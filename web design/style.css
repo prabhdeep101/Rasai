@@ -9,7 +9,7 @@ html {
     color: white;
 }
 .logo{
-    margin: 20px;
+    margin: 25px;
 }
 
 /* Navigation Bar */
@@ -28,9 +28,9 @@ html {
    text-decoration: none;
    font-family: 'Franklin Gothic Medium';
    font-size: 25px;
-   margin-right: 10px;
    padding: 10px;
-   margin: 10px;
+   margin-bottom: 5%;
+   margin-left: 12%;
    border-radius: 5px;
  }
  .header a:hover {
@@ -41,3 +41,56 @@ html {
    font-family: 'Franklin Gothic Medium';
    color: black;
  }
+
+  /*Header*/ 
+  /*columns and rows*/ 
+  .column {
+    float: left;
+    padding: 10px;
+}
+/* 4 columns - logo and nav bar */
+.column.side {
+  width: 90%;
+}
+  /* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+      /* Responsive layout - makes the two columns stack on        top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column.side, .column.middle {
+          width: 100%;
+        }
+        }
+
+
+       /*Body*/   
+.whitebg {
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
+
+
+
+
+ /*Footer*/ 
+.footer a {
+ 
+  overflow: hidden;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium';
+  font-size: 20px;
+  margin-left: 35%;
+  margin-right: 10%;
+}
+.p1 {
+
+  overflow: hidden;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium';
+  font-size: 20px;
+}
