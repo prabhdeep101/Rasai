@@ -30,6 +30,7 @@ html {
    overflow: hidden;
    text-decoration: none;
    font-family: 'Franklin Gothic Medium';
+   background-color: black;
  }
  .header a:not(.logo-link, body-links-home) {
    display: inline-block;
@@ -74,7 +75,7 @@ html {
         }
  /*Footer*/ 
  .footer a {
- 
+ background-color: black;
   overflow: hidden;
   text-decoration: none;
   font-family: 'Franklin Gothic Medium';
@@ -83,7 +84,6 @@ html {
   margin-right: 10%;
 }
 .p1 {
-
   overflow: hidden;
   text-decoration: none;
   font-family: 'Franklin Gothic Medium';
@@ -96,11 +96,6 @@ html {
         padding: 10px;
         text-align: center;
       }
-    p { 
-      background-color: white;
-      margin-left: 10px;
-      color: black;
-    }
 
        /*This section is where all the differences from all pages will be*/      
        /*Home/Index page*/ 
@@ -115,5 +110,39 @@ html {
         padding: 5px;
       }
 
+      .column1 {
+        float: left;
+        padding: 0%;
+        margin: 0%;
+        background-color: white;
+    }
+    /* 2 columns - logo and nav bar */
+    .column1.side {
+      color: black;
+      background-color: white;
+      width: 50%;
+    }
+.food {
+  width: 90%;
+  background-color: white;
+}
+p { 
+  color: black;
+  background-color: white;
+  padding-right: 20px;
+  float: left;
+  font-size: 20px;
+}
 
-     
+/* Style the word "Rasai" to be green */
+.green {
+  color: #51AF2F;
+  background-color: white;
+  float: left;
+}
+
+h2 {
+  background-color: white;
+  color: black;
+  float: left;
+}
