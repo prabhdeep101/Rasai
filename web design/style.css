@@ -8,21 +8,30 @@ html {
     font-family: trebutchet MS;
     color: white;
 }
-.logo{
-    margin: 25px;
+/* Styling for the logo in the navigation bar */
+.logo-link {
+  margin-left: 7%;
 }
 
-/* Navigation Bar */
+.logo {
+  margin: 25px;
+}
+/* Prevent hover effect on the logo */
+.logo-link:hover .logo {
+   overflow: hidden;
+   text-decoration: none;
+   font-family: 'Franklin Gothic Medium';
+}
+
+/* Navigation Bar about, menu, booking*/
 .header {
-    /*Aligned left incase we want a search bar*/
    text-align: left;
    padding: 20px 10px;
    overflow: hidden;
    text-decoration: none;
    font-family: 'Franklin Gothic Medium';
-   /*Border removed becaues it wasn't in mockups*/
  }
- .header a {
+ .header a:not(.logo-link) {
    display: inline-block;
    overflow: hidden;
    text-decoration: none;
@@ -30,10 +39,10 @@ html {
    font-size: 25px;
    padding: 10px;
    margin-bottom: 5%;
-   margin-left: 12%;
+   margin-left: 11%;
    border-radius: 5px;
  }
- .header a:hover {
+ .header a:hover:not(.logo-link) {
    /*hover changed to light blue*/
    background-color: lightblue;
    overflow: hidden;
@@ -50,7 +59,7 @@ html {
 }
 /* 4 columns - logo and nav bar */
 .column.side {
-  width: 90%;
+  width: 80%;
 }
   /* Clear floats after the columns */
 .row:after {
@@ -67,11 +76,14 @@ html {
 
 
        /*Body*/   
-.whitebg {
-  background-color: white;
-  color: black;
-  padding: 10px;
-}
+       /*This section is where all the differences from all pages will be*/ 
+       
+       /*Home/Index page*/ 
+    .whitebg {
+      background-color: white;
+      color: black;
+      padding: 10px;
+    }
 
 
 
