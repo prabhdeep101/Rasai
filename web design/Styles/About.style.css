@@ -1,0 +1,90 @@
+
+/* HOME PAGE STYLING! */
+
+
+.column1 {
+  float: left;
+  width: 50%; /* Each column takes 50% of the width */
+  background-color: white;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Main body of text background */
+.whitebg {
+  background-color: white;
+  margin-top: 10px;
+}
+
+/* 1st image */
+.food {
+  width: 87%; /* Adjust the width as needed */
+  background-color: white;
+  padding-left: 30px;
+  padding-bottom: 43px;
+  margin-top: 20px;
+}
+
+/* What is Rasia? heading */
+h2 {
+  background-color: white;
+  color: black;
+  font-family: Arial;
+  margin-top: 0;
+  margin-bottom: 7px;
+  padding-top: 20px;
+}
+
+/* Rasia - text in green */
+.green {
+  background-color: white;
+  color: #1FC333;
+  margin-top: 0; /* Remove default margin */
+  margin-bottom: 20px;
+}
+/* What is Rasia paragraph */
+.p1 {
+  background-color: white;
+  color: black;
+  font-family: Arial;
+  font-size: 23px;
+  padding-right: 40px;
+  margin-top: 0; /* Remove default margin */
+  margin-bottom: 13px;
+}
+
+/* paragraph under image */
+.p2 {
+  background-color: white;
+  color: black;
+  font-family: Arial;
+  font-size: 23px;
+  padding-right: 40px;
+  padding-left: 30px;
+  margin-top: 0; /* Remove default margin */
+}
+
+/* About Me heading */
+.abouthead {
+  background-color: white;
+  color: black;
+  font-family: Arial;
+  margin-top: 0;
+  padding-left: 30px;
+  margin-bottom: 7px;
+}
+.Aboutme {
+  background-color: white;
+  color: black;
+  font-family: Arial;
+  font-size: 23px;
+  padding-right: 40px;
+  padding-left: 30px;
+  padding-bottom: 23px;
+  margin-top: 0; /* Remove default margin */
+}

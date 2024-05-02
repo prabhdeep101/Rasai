@@ -1,0 +1,112 @@
+
+/* All Pages PAGE STYLING! */
+
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+*{
+    background-color: black;
+    font-family: trebutchet MS;
+    color: white;
+}
+
+/* Styling for the logo in the navigation bar */
+.logo-link {
+  margin-left: 7%;
+}
+/* Styling for the logo in the navigation bar */
+.logo {
+  max-width: 10%;
+  margin: auto;
+}
+/* Prevent hover effect on the logo */
+.logo-link:hover .logo, body-links-home {
+   overflow: hidden;
+   text-decoration: none;
+   font-family: 'Franklin Gothic Medium';
+}
+
+/* Navigation Bar about, menu, booking, contacts*/
+.header {
+   text-align: left;
+   padding: 5px;
+   overflow: hidden;
+   text-decoration: none;
+   font-family: 'Franklin Gothic Medium';
+   background-color: black;
+ }
+ .header a:not(.logo-link, body-links-home) {
+   display: inline-block;
+   overflow: hidden;
+   text-decoration: none;
+   font-family: 'Franklin Gothic Medium';
+   font-size: 25px;
+   padding: 2px;
+   margin-bottom: 1.5%;
+   margin-left: 10%;
+   border-radius: 5px;
+ }
+ .header a:hover:not(.logo-link, body-links-home) {
+   /*hover changed to light blue*/
+   color: lightgreen;
+   overflow: hidden;
+   text-decoration: none;
+   font-family: 'Franklin Gothic Medium';
+ }
+
+  /*Header*/ 
+  /*columns and rows*/ 
+  .column {
+    float: left;
+    padding: 5px;
+}
+/* 5 columns - logo and nav bar */
+.column.side {
+  width: 100%;
+}
+  /* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+      /* Responsive layout - makes the two columns stack on
+      top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column.side, .column.middle {
+          width: 100%;
+        }
+        }
+
+        .whitebg {
+          background-color: 	white;
+        }
+
+
+     /* Footer*/
+        .footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 5%;
+      }
+      
+      .footer ul {
+          list-style: none;
+          padding: 0;
+      }
+      .footer .footer-links {
+        margin-right: 50px; /* Add margin to the right of the first list */
+    }
+    
+    .footer .footer-contacts {
+        margin-left: 50px; /* Add margin to the left of the second list */
+    }      
+      .footer a, .footer p {
+          text-decoration: none;
+          font-family: 'Franklin Gothic Medium', sans-serif;
+          font-size: 20px;
+          margin: 0; /* Remove default margin */
+      }
