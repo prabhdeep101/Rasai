@@ -4,22 +4,31 @@
 html {
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal overflow */
   }
 
 *{
-    background-color: black;
     font-family: trebutchet MS;
+    box-sizing: border-box;
     color: white;
+    margin: 0;
 }
 
 /* Styling for the logo in the navigation bar */
 .logo-link {
   margin-left: 7%;
 }
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
 /* Styling for the logo in the navigation bar */
 .logo {
   max-width: 10%;
-  margin: auto;
 }
 /* Prevent hover effect on the logo */
 .logo-link:hover .logo, body-links-home {
@@ -30,12 +39,13 @@ html {
 
 /* Navigation Bar about, menu, booking, contacts*/
 .header {
-   text-align: left;
-   padding: 5px;
-   overflow: hidden;
-   text-decoration: none;
-   font-family: 'Franklin Gothic Medium';
-   background-color: black;
+    text-align: center;
+    overflow: hidden;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium';
+    background-color: black;
+    padding: 10px 0; /* Adjust padding */
+    margin: 0; /* Remove default margin */
  }
  .header a:not(.logo-link, body-links-home) {
    display: inline-block;
@@ -51,9 +61,6 @@ html {
  .header a:hover:not(.logo-link, body-links-home) {
    /*hover changed to light blue*/
    color: lightgreen;
-   overflow: hidden;
-   text-decoration: none;
-   font-family: 'Franklin Gothic Medium';
  }
 
   /*Header*/ 
@@ -65,6 +72,7 @@ html {
 /* 5 columns - logo and nav bar */
 .column.side {
   width: 100%;
+  padding: 0%; /* This removes the white space arround the headder*/
 }
   /* Clear floats after the columns */
 .row:after {
@@ -80,10 +88,6 @@ html {
         }
         }
 
-        .whitebg {
-          background-color: 	white;
-        }
-
 
      /* Footer*/
         .footer {
@@ -91,6 +95,11 @@ html {
           justify-content: center;
           align-items: center;
           margin-top: 5%;
+          background-color: black;
+          width: 100%;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          margin: 0; /* Remove default margin */
       }
       
       .footer ul {
