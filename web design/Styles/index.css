@@ -1,0 +1,36 @@
+
+/* HOME PAGE STYLING! */
+
+.fish {
+  width: 100%;
+  height: auto; 
+  display: block; 
+  float: none;
+}
+.TextFish {
+  position: absolute;
+  font-family: 'Trebuchet MS';
+  top: 90%;
+  left: 5%;
+  right: 70%;
+  font-size: 25px;
+}
+.p1 {
+  position: absolute;
+  font-family: 'Trebuchet MS';
+  font-size: 30px;
+}
+h4 {
+  color: lightgreen;
+  font-family: 'Trebuchet MS';
+}
+.ImgHome {
+  width: 100%;
+  height: auto; 
+  display: block; 
+  float: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}

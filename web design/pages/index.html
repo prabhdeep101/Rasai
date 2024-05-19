@@ -3,47 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Styles/AllPages.style.css">
-    <link rel="stylesheet" href="../Styles/index.style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Styles/AllPages.css">
+    <link rel="stylesheet" href="../Styles/index.css">
     <title>Home</title>
 </head>
-<div class="row">
-    <div class="column side">
-        <div class="header">
-            <a href="index.html" class="logo-link"><img class="logo" src="../images/Logo.png" alt="Go to home page"></a>
+    <body>
+        <div class="navbar">
+        <a href="index.html" class="logo-link"><img class="logo" src="../images/Logo.png" alt="Go to home page"></a>
+          <div class="NavHead">
             <a href="About.html">About</a>
             <a href="Menu.html">Menu</a>
             <a href="Booking.html">Booking</a>
-            <a href="#contacts">Contacts</a>
-
+            <a href="Login.html">Login</a>
         </div>
-    </div>
-</div>
-<body>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-    <footer>
-        <div class="footer">
-            <div class="footer-links">
-                <ul>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Menu.html">Menu</a></li>
-                    <li><a href="Booking.html">Booking</a></li>
-                </ul>
+          <div class="dropdown">
+              <a href="javascript:void(0);" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+              <br>
+              <br>
+              <br>
+              <br>
+            <div class="dropdown-content">
+              <div class="header"> 
+              <div class="row">
+                <div class="column">
+                  <a href="About.html">About</a>
+                  <a href="Menu.html">Menu</a>
+                  <a href="Booking.html">Booking</a>
+                  <a href="Login.html">Login</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="footer-contacts" id="contacts"> <!-- Add an ID to the Contacts section -->
-                <ul>
-                    <li><a>Contacts</a></li>
-                    <li><p><b>info@rasi.co.nz</b></p></li>
-                    <li><p><b>0210 452 333</b></p></li>
-                </ul>
-            </div>
+          </div> 
         </div>
-    </footer>
+        
+     <div class="fishBox">
+        <img class="fish" src="../images/Fish.png" alt="Fish"></a>
 
-</footer>
+            <div class="TextFish">
+                <h2>Ambulthiyal (Fish ambul thiyal)</h2>
+                <br>
+                <p1>Ambulthiyal, also known as malu ambulthiyal is a must try Sri Lankan sour fish curry.
+                    Made with Goraka(dried gorcinia) and black pepper, not only gives the fish ambulthiyal(dour fish) curry a unique taste but also a method of preserving fish without refiguration of freezing.
+                </p1>
+                <br><br><br>
+                <h4>Visit our menu!</h4>
+            </div>
+     </div>
+     
+
+     
+     <a href="About.html"><img class="ImgHome" src="../images/About.png" alt="About"></a>
+     <a href="Menu.html"><img class="ImgHome" src="../images/Menu.png" alt="Menu"></a>
+     <a href="Booking.html"><img class="ImgHome" src="../images/Booking.png" alt="Booking"></a>
+     <br>
+
+        <footer>
+            <div class="footer">
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Booking.html">Booking</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts" id="contacts">
+                    <ul>
+                        <li><a>Contacts</a></li>
+                        <li><p><b>info@rasi.co.nz</b></p></li>
+                        <li><p><b>0210 452 333</b></p></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>    
+
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+                </script>
 </body>
 </html>
