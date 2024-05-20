@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../Styles/AllPages.css">
+    <link rel="stylesheet" href="../Styles/Booking.css">
     <title>Home</title>
 </head>
     <body>
@@ -39,12 +40,90 @@
           </div> 
         </div>
         
-        <br>
-        <p>Booking - To be completed soon...</p>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p class="top-text">Please fill out our Event Enquiry form below so we can determine the best 
+          way for us to get you information about our catering services. You can also call us 
+          directly or email us and we will get right back to you. We look forward to hearing from you.</p>
+
+        <div class="container">
+          <form action="/action_page.php">
+            <div class="row">
+              <div class="col-25">
+                <label for="Fname">First Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="Fname" name="FirstName" placeholder="Your first name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="Lname">Last Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="Lname" name="LastName" placeholder="Your last name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="Email">Email</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="Email" name="Email" placeholder="Your Email..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="Phone">Phone</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="Phone" name="Phone" placeholder="Your phone number..">
+              </div>
+            </div>
+            <br><br>
+            <div class="row">
+              <div class="col-25">
+                <label for="EDate">Event Date</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="EDate" name="EventDate" placeholder="Date of event..">
+              </div>
+            </div>
+                <div class="row">
+              <div class="col-25">
+                <label for="ETime">Event Time</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="ETime" name="EventTime" placeholder="Time of event..">
+              </div>
+            </div>
+                <div class="row">
+              <div class="col-25">
+                <label for="NumAdults">Number of Adults</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="NumAdults" name="NumberOfAdults" placeholder="Number of Adults..">
+              </div>
+            </div>
+                    <div class="row">
+              <div class="col-25">
+                <label for="NumChildren">Number of Children</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="NumChildren" name="NumberOfChildren" placeholder="Number of Children..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="SPRequests">Event Info/Special Requests</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Send">
+            </div>
+          </form>
+        </div>
 
         <footer>
             <div class="footer">
