@@ -1,18 +1,23 @@
 
 /* HOME/INDEX PAGE STYLING! */
 
+.fishBox {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 .fish {
   width: 100%;
-  height: auto; 
-  display: block; 
-  float: none;
+  height: auto;
+  display: block;
 }
 .TextFish {
   position: absolute;
   font-family: 'Trebuchet MS';
-  top: 90%;
+  top: 55%;
   left: 5%;
-  right: 70%;
+  right: 55%;
   font-size: 25px;
 }
 .p1 {
@@ -33,4 +38,16 @@ h4 {
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
+}
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .fishBox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .TextFish {
+    position: static;
+    width: 100%;
+    padding: 10px;
+  }
 }
