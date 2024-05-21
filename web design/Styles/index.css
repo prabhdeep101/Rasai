@@ -8,14 +8,14 @@
   align-items: center;
 }
 .fish {
-  width: 100%;
+  width: 70%;
+  margin-left: 30%;
   height: auto;
-  display: block;
 }
 .TextFish {
   position: absolute;
   font-family: 'Trebuchet MS';
-  top: 55%;
+  top: 40%;
   left: 5%;
   right: 55%;
   font-size: 25px;
@@ -40,7 +40,7 @@ h4 {
   padding-right: 20px;
 }
 /* Responsive adjustments */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .fishBox {
     flex-direction: column;
     align-items: flex-start;
@@ -48,6 +48,19 @@ h4 {
   .TextFish {
     position: static;
     width: 100%;
-    padding: 10px;
+    font-size: 15px;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 1310px) and (min-width: 801px) {
+  .fishBox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .TextFish {
+    position: static;
+    width: 100%;
+    font-size: 20px;
+    padding: 30px;
   }
 }
