@@ -27,7 +27,7 @@ body {
 
 /* Styling for the logo in the navigation bar */
 .logo {
-  max-width: 80%;
+  max-width: 70%;
   height: auto;
 }
 /* Prevent hover effect on the logo */
@@ -44,7 +44,7 @@ body {
 }
 
 .NavHead {
-  padding-top: 3%;
+  padding-top: 30px;
 }
 
 .navbar a {
@@ -52,7 +52,6 @@ body {
   font-size: 20px;
   color: white;
   text-align: center;
-  padding: 14px 10px;
   text-decoration: none;
   text-align: center;
   overflow: hidden;
