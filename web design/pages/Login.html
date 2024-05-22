@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../Styles/AllPages.css">
+    <link rel="stylesheet" href="../Styles/Login.css">
     <title>Login</title>
 </head>
     <body>
@@ -38,13 +39,26 @@
             </div>
           </div> 
         </div>
+        <div class="login-box"> <!-- Container for the login form -->
+          <form action="/action_page.php" method="post" class="login-form">
+          <div class="imgcontainer">
+            <b><p>Login</p></b>
+          </div>
         
-        <br>
-        <p>Login - To be completed soon...</p>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div class="container">
+            <b><label for="uname">Username</label></b>
+            <input type="text" placeholder="Type your username" name="uname" required>
+        
+            <b><label for="psw">Password</label></b>
+            <input type="password" placeholder="Type your password" name="psw" required>
+            <b><span class="psw"> <a href="#">Forgot password?</a></span></b>
+            <br><br><br><br><br><br><br><br><br>
+            <b><button type="submit">Login</button></b>
+          </div>
+        </div>
+        
+        </form>
+        
 
         <footer>
             <div class="footer">
