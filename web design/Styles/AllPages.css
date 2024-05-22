@@ -52,8 +52,6 @@ body {
   font-size: 20px;
   color: white;
   text-align: center;
-  text-decoration: none;
-  text-align: center;
   overflow: hidden;
   text-decoration: none;
   font-family: 'Franklin Gothic Medium';
@@ -64,7 +62,7 @@ body {
 /* This is the dropdown for the nav bar when in mobile
 screen mode */
 .dropdown {
-  float: left;
+  float: right;
   overflow: hidden;
 }
 
@@ -84,6 +82,7 @@ screen mode */
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 /* Column for footer */
 .column {
   float: left;
@@ -135,14 +134,14 @@ screen mode */
   /* Show the dropdown menu icon */
   .dropdown {
     display: block;
-    top: 20px; /* Keep it aligned to the top of the header */
-    right: 20px; /* Adjust as needed to align to the right */
-    position: absolute;
+    margin-top: 10px;
+    margin-right: 20px;
   }
   /* Logo when in mobile screen mode */
 .logo {
   max-width: 55%;
   height: auto;
+  margin-top: 4%;
 }
 }
 /* Footer styling*/
