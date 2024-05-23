@@ -1,6 +1,8 @@
 
 /* HOME/INDEX PAGE STYLING! */
-
+html {
+  font-family: 'Trebuchet MS';
+}
 .fishBox {
   position: relative;
   display: flex;
@@ -8,25 +10,27 @@
   align-items: center;
 }
 .fish {
-  width: 70%;
-  margin-left: 30%;
+  width: 50%;
+  margin-left: 48.5%;
   height: auto;
+  border: 2px solid black;
 }
 .TextFish {
   position: absolute;
   font-family: 'Trebuchet MS';
-  top: 40%;
-  left: 5%;
-  right: 55%;
+  text-align: center;
+  top: 20%;
+  left: 8%;
+  right: 60%;
   font-size: 25px;
 }
 .p1 {
   position: absolute;
-  font-family: 'Trebuchet MS';
   font-size: 30px;
+  font-family: 'Trebuchet MS';
 }
 h4 {
-  color: lightgreen;
+  color: green;
   font-family: 'Trebuchet MS';
 }
 .ImgHome {
@@ -42,25 +46,43 @@ h4 {
 /* Responsive adjustments */
 @media screen and (max-width: 800px) {
   .fishBox {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column; 
+    /* flex-direction: column-reverse;  */
+    /* change above to below to put text atop image */
+    align-items: center;
   }
   .TextFish {
     position: static;
     width: 100%;
     font-size: 15px;
-    padding: 30px;
+    padding: 10%;
+    padding-top: 5%;
+    text-align: center; /* Center-align text */
+  }
+  .fish {
+    width: 100%; /* Make image take full width */
+    max-width: none; /* Remove max-width */
+    margin-left: 0; /* Remove left margin */
   }
 }
 @media screen and (max-width: 1310px) and (min-width: 801px) {
   .fishBox {
     flex-direction: column;
-    align-items: flex-start;
+    /* change above to below to put text atop image */
+     /* flex-direction: column-reverse;  */
+    align-items: center;
   }
   .TextFish {
     position: static;
     width: 100%;
     font-size: 20px;
     padding: 30px;
+    padding-top: 5%;
+    text-align: center; /* Center-align text */
+  }
+  .fish {
+    width: 100%; /* Make image take full width */
+    max-width: none; /* Remove max-width */
+    margin-left: 0; /* Remove left margin */
   }
 }
