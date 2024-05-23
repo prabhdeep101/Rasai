@@ -43,12 +43,17 @@ h4 {
   padding-left: 20px;
   padding-right: 20px;
 }
-/* Responsive adjustments */
+
+/* Responsive adjustments 
+
+Some code is commented out, to change the image from on top, 
+see commented out code for both media sections.*/
+
 @media screen and (max-width: 800px) {
   .fishBox {
-    flex-direction: column; 
-    /* flex-direction: column-reverse;  */
-    /* change above to below to put text atop image */
+    /* flex-direction: column;  */
+    flex-direction: column-reverse; 
+    /* change column to column-reverse to put text atop image */
     align-items: center;
   }
   .TextFish {
@@ -67,9 +72,9 @@ h4 {
 }
 @media screen and (max-width: 1310px) and (min-width: 801px) {
   .fishBox {
-    flex-direction: column;
-    /* change above to below to put text atop image */
-     /* flex-direction: column-reverse;  */
+    /* flex-direction: column; */
+    flex-direction: column-reverse; 
+    /* change column to column-reverse to put text atop image */
     align-items: center;
   }
   .TextFish {
