@@ -3,3 +3,11 @@
 * {
   font-family: 'Trebuchet MS';
 }
+.top-text {
+  padding: 2%;
+}
+/* Container for the columns */
+.food {
+  max-width: 35%;
+  margin: 20px;
+}
