@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@* <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div> *@
+
+<head>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <script src="/js/site.js"></script>
+</head>
+
+
+
+
+<div class="navbar">
+    <a asp-controller="Home" asp-action="Index" class="logo-link"><img class="logo" src="/lib/Logo.png" alt="Go to home page"></a>
+    <div class="NavHead">
+        <a asp-controller="Home" asp-action="About">About</a>
+        <a asp-controller="MenuItems" asp-action="Index">Menu</a>
+        <a asp-controller="Home" asp-action="Booking">Booking</a>
+        
+    </div>
+    <div class="dropdown">
+        <a href="javascript:void(0);" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <br><br><br><br>
+        <div class="dropdown-content">
+            <div class="header">
+                <div class="row">
+                    <div class="column">
+                        <a asp-controller="Home" asp-action="About">About</a>
+                        <a asp-controller="Home" asp-action="Menu">Menu</a>
+                        <a asp-controller="Home" asp-action="Booking">Booking</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="fishBox">
+    <img class="fish" src="/lib/7Kottu.png" alt="Fish"></a>
+
+    <div class="TextFish">
+        <h2>RASAI</h2>
+        <br>
+        <b><p1>Fabulous Sri Lankan food</p1></b>
+        <br><br><br>
+        <h4>Visit our menu!</h4>
+    </div>
+</div>
+<br>
+
+
+
+<a asp-controller="Home" asp-action="About"><img class="ImgHome" src="//lib/About.png" alt="About"></a>
+<a asp-controller="Home" asp-action="Menu"><img class="ImgHome" src="/lib/Menu.png" alt="Menu"></a>
+<a asp-controller="Home" asp-action="Booking"><img class="ImgHome" src="/lib/Booking.png" alt="Booking"></a>
+<br>
+
+<footer>
+    <div class="footer">
+        <div class="footer-links">
+            <ul>
+                <a asp-controller="Home" asp-action="About">About</a>
+                <a asp-controller="Home" asp-action="Menu">Menu</a>
+                <a asp-controller="Home" asp-action="Booking">Booking</a>
+            </ul>
+        </div>
+        <div class="footer-contacts" id="contacts">
+            <ul>
+                <li><a>Contacts</a></li>
+                <li><p><b>info@rasi.co.nz</b></p></li>
+                <li><p><b>0210 452 333</b></p></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
